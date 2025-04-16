@@ -21,8 +21,8 @@ Welcome to my NumPy learning repo! This is where I explore and practice the fund
 ```bash
 numpy-learning/
 │
-├── 01_array_basics.py       # Creating and inspecting arrays
-├── 02_array_operations.py   # Arithmetic, broadcasting, etc.
+├── 01_main.py       # Creating and inspecting arrays
+├── 02_basic_operations.py   # Arithmetic, broadcasting, etc.
 ├── 03_reshaping.py          # Reshape, flatten, ravel, etc.
 ├── 04_math_functions.py     # np.mean, np.std, etc.
 ├── 05_linear_algebra.py     # Dot product, inverse, etc.

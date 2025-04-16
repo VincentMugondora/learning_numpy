@@ -14,3 +14,13 @@ print(np.char.splitlines('hello\nworld'))  # ['hello', 'world']
 
 # This uses the np.char.strip() function to remove the character 'h' from the beginning and end of each string in the array ['hello', 'hey', 'how', 'who'].
 print(np.char.strip(['hello', 'hey', 'how', 'who', 'blah'], 'h'))  
+
+print(np.char.rstrip(['hello', 'hey', 'how', 'who'], 'h'))  # ['hello' 'hey' 'how' 'who']
+print(np.char.lstrip(['hello', 'hey', 'how', 'who'], 'h'))  # ['ello' 'ey' 'ow' 'who']
+
+print(np.char.replace('hello world', 'world', 'there'))  # hello there
+print(np.char.find('hello world', 'world'))  # 6
+print(np.char.index('hello world', 'world'))  # 6
+print(np.char.count('hello world', 'l'))  # 3   
+print(np.char.count('hello world', 'l', 0, 5))  # 2
+print(np.char.join(['-', ":"], ['dmy', 'ymd']) ) 

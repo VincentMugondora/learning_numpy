@@ -18,4 +18,4 @@ for x in np.nditer(a, order='C'):
     print(x, end=' ')
 
 for x in np.nditer(a, order='F'):
-    print(x)
+    print(f"\n{x}", end=' ')

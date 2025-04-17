@@ -13,3 +13,7 @@ print(f'The shape of the resized array is: {b.shape}') # shape of the resized ar
 b = np.resize(a, (2, 3)) # resize the array to 2 rows and 3 columns
 print(f'\nresized array:\n{b}')
 print(f'The shape of the resized array is: {b.shape}')
+
+b = np.resize(a, (3, 3)) # resize the array to 3 rows and 3 columns
+print(f'\nresized array:\n{b}')
+print(f'The shape of the resized array is: {b.shape}')

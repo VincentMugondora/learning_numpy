@@ -21,4 +21,5 @@ plt.xlabel("X-axis")
 plt.ylabel("Y-axis")
 plt.show()
 
-# create a 
+# create a 6 * 6 two dimensional array and let 1 and 0 to be placed alternatively across diagonals
+z = np.zeros((6, 6), dtype=int)

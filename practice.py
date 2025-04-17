@@ -33,3 +33,13 @@ z = np.random.rand(10, 10)
 z[np.random.randint(10, size=5), np.random.randint(10, size=5)] = np.nan
 print("\nArray with missing values:")
 print(z)
+missing_values = np.isnan(z)
+total_missing = np.sum(missing_values)
+print(f"\nTotal number of missing values: {total_missing}")
+locations = np.argwhere(missing_values)
+print("Locations of missing values (row, column):")
+print(locations)
+inds = np.where(missing_values)
+z[inds] = 0
+print("\nArray with missing values replaced by 0:")
+print(z)

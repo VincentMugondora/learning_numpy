@@ -23,3 +23,13 @@ plt.show()
 
 # create a 6 * 6 two dimensional array and let 1 and 0 to be placed alternatively across diagonals
 z = np.zeros((6, 6), dtype=int)
+z[1::2, ::2] = 1
+z[::2, 1::2] = 1
+print("\n6x6 array with 1s and 0s placed alternatively across diagonals:")
+print(z)
+
+# find the total number and loactions of missing values in the array
+z = np.random.rand(10, 10)
+z[np.random.randint(10, size=5), np.random.randint(10, size=5)] = np.nan
+print("\nArray with missing values:")
+print(z)
